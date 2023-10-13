@@ -1,3 +1,5 @@
+"use client";
+
 import { Link } from "react-router-dom";
 
 const EventItem = (event: any): JSX.Element => {

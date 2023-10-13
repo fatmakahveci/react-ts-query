@@ -1,3 +1,5 @@
+"use client";
+
 import { Link, Outlet } from "react-router-dom";
 
 import Header from "../Header";
@@ -14,11 +16,11 @@ const Events = (): JSX.Element => {
 					New Event
 				</Link>
 			</Header>
-			{/* <main>
+			<main>
 				<EventsIntroSection />
-				<NewEventsSection />
+				{/* <NewEventsSection /> */}
 				<FindEventSection />
-			</main> */}
+			</main>
 		</>
 	);
 };

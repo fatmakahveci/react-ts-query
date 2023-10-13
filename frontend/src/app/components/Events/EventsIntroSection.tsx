@@ -1,20 +1,15 @@
+"use client";
+
 import { Link } from "react-router-dom";
 
-// import meetupImg from "../../assets/meetup.jpg";
+// import meetupImg from "../../../assets/meetup.jpg";
 
 const EventsIntroSection = (): JSX.Element => {
 	return (
-		<></>
-			);
-};
-
-export default EventsIntroSection;
-
-
-{/* <section
+		<section
 			className="content-section"
 			id="overview-section"
-			style={{ backgroundImage: `url(${meetupImg})` }}
+			// style={{ backgroundImage: `url(${meetupImg})` }}
 		>
 			<h2>
 				Connect with amazing people <br />
@@ -26,4 +21,8 @@ export default EventsIntroSection;
 					Create your first event
 				</Link>
 			</p>
-		</section> */}
+		</section>
+	);
+};
+
+export default EventsIntroSection;

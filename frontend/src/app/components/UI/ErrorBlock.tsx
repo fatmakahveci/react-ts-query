@@ -1,3 +1,5 @@
+"use client";
+
 const ErrorBlock = (title: string, message: string): JSX.Element => {
 	return (
 		<div className="error-block">
