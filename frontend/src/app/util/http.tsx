@@ -1,3 +1,5 @@
+"use client";
+
 export const fetchEvents = async (): Promise<Event> => {
 	const response: Response = await fetch("http://localhost:3000/events");
 
