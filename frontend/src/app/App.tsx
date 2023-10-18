@@ -5,7 +5,7 @@ import {
 	RouterProvider,
 	createBrowserRouter,
 } from "react-router-dom";
-
+import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import Events from "./components/Events/Events";
 import EventDetails from "./components/Events/EventDetails";
 import NewEvent from "./components/Events/NewEvent";
@@ -39,8 +39,14 @@ const router = createBrowserRouter([
 	},
 ]);
 
+const queryClient: QueryClient = new QueryClient();
+
 const App = (): JSX.Element => {
-	return <RouterProvider router={router}></RouterProvider>;
+	return (
+		<QueryClientProvider client={queryClient}>
+			<RouterProvider router={router} />
+		</QueryClientProvider>
+	);
 };
 
 export default App;
