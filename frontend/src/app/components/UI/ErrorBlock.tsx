@@ -1,6 +1,12 @@
 "use client";
 
-const ErrorBlock = (title: string, message: string): JSX.Element => {
+const ErrorBlock = ({
+	title,
+	message,
+}: {
+	title: string;
+	message: string;
+}): JSX.Element => {
 	return (
 		<div className="error-block">
 			<div className="error-block-icon">!</div>

@@ -2,13 +2,14 @@
 
 import { useQuery } from "@tanstack/react-query";
 
-import LoadingIndicator from "../UI/LoadingIndicator";
-// import ErrorBlock from "../UI/ErrorBlock";
-// import EventItem from "./EventItem";
+import { EventType } from "../../../shared/types";
 import { fetchEvents } from "../../util/http";
+import ErrorBlock from "../UI/ErrorBlock";
+import LoadingIndicator from "../UI/LoadingIndicator";
+import EventItem from "./EventItem";
 
 const NewEventsSection = (): JSX.Element => {
-	const { data, isPending, isError } = useQuery({ // ,error
+	const { data, isPending, isError, error } = useQuery({
 		queryKey: ["events"],
 		queryFn: fetchEvents,
 	});
@@ -21,23 +22,21 @@ const NewEventsSection = (): JSX.Element => {
 
 	if (isError) {
 		content = (
-			<></>
-			// <ErrorBlock
-			// 	title="An error occurred"
-			// 	message={error.info?.message || "Failed to fetch events."}
-			// />
+			<ErrorBlock
+				title="An error occurred"
+				message={error.message || "Failed to fetch events."}
+			/>
 		);
 	}
 
 	if (data) {
 		content = (
 			<ul className="events-list">
-				<li></li>
-				{/* {data.map((event) => (
+				{data.map((event: EventType) => (
 					<li key={event.id}>
 						<EventItem event={event} />
 					</li>
-				))} */}
+				))}
 			</ul>
 		);
 	}

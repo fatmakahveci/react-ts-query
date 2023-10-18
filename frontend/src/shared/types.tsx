@@ -7,6 +7,7 @@ export type EventType = {
 	description: string;
 	id: string;
 	image: string;
+	location: string;
 	title: string;
 };
 

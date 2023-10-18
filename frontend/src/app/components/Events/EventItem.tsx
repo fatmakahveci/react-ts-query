@@ -1,8 +1,9 @@
 "use client";
 
 import { Link } from "react-router-dom";
+import { EventType } from "../../../shared/types";
 
-const EventItem = (event: any): JSX.Element => {
+const EventItem = ({ event }: { event: EventType }): JSX.Element => {
 	const formattedDate = new Date(event.date).toLocaleDateString("en-US", {
 		day: "numeric",
 		month: "short",
