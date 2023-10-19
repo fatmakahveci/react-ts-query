@@ -2,14 +2,14 @@
 
 import { Link } from "react-router-dom";
 
-// import meetupImg from "../../../assets/meetup.jpg";
+import meetupImg from "../../../assets/meetup.jpg";
 
 const EventsIntroSection = (): JSX.Element => {
 	return (
 		<section
 			className="content-section"
 			id="overview-section"
-			// style={{ backgroundImage: `url(${meetupImg})` }}
+			style={{ backgroundImage: `url(${meetupImg})` }}
 		>
 			<h2>
 				Connect with amazing people <br />
