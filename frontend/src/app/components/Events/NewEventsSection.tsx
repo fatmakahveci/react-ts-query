@@ -12,6 +12,8 @@ const NewEventsSection = (): JSX.Element => {
 	const { data, isPending, isError, error } = useQuery({
 		queryKey: ["events"],
 		queryFn: fetchEvents,
+		staleTime: 5000,
+		gcTime: 30000,
 	});
 
 	let content;
