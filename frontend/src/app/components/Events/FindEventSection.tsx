@@ -1,9 +1,17 @@
 "use client";
 
-// import { useRef } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { useRef, useState } from "react";
+import { fetchEvents } from "../../util/http";
 
 const FindEventSection = (): JSX.Element => {
-	// const searchElement = useRef();
+	const searchElement = useRef<HTMLInputElement>();
+	const [searchValue, setSearchValue] = useState('');
+
+	useQuery({
+		queryKey: ["events", { search: searchElement.current.value }],
+		queryFn: () => fetchEvents(searchElement.current.value),
+	});
 	
 	const handleSubmit = (event: any) => {
 		event.preventDefault();
