@@ -1,5 +1,10 @@
 # Getting Started with Create React App
 
+[![React](https://img.shields.io/badge/Frontend-React%20%2B%20TypeScript-149ECA?logo=react&logoColor=white)](frontend/)
+[![Node.js](https://img.shields.io/badge/Backend-Node.js-339933?logo=node.js&logoColor=white)](backend/)
+[![Last commit](https://img.shields.io/github/last-commit/fatmakahveci/react-ts-query)](https://github.com/fatmakahveci/react-ts-query/commits/main)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE.md)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
