@@ -19,7 +19,7 @@ The development server runs at http://localhost:5173. Start the repository's bac
 ## Quality Commands
 
 ```bash
-npm test
+npm run test:coverage
 npm run typecheck
 npm run build
 ```

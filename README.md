@@ -49,9 +49,10 @@ The frontend opens on http://localhost:5173 and communicates with the local back
 ## Quality Checks
 
 ```bash
-cd frontend && npm test
+cd frontend && npm run test:coverage
 cd frontend && npm run typecheck
 cd frontend && npm run build
+cd backend && npm run test:coverage
 ```
 
 ## Repository Structure
