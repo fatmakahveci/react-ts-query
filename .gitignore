@@ -37,8 +37,6 @@ next-env.d.ts
 .next/
 .swc/
 .*.env
-package-lock.json
-
 # Logs
 logs
 *.log
