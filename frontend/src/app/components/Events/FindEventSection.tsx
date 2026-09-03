@@ -1,16 +1,15 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { fetchEvents } from "../../util/http";
 
 const FindEventSection = (): JSX.Element => {
-	const searchElement = useRef<HTMLInputElement>();
-	const [searchValue, setSearchValue] = useState('');
+	const [searchValue, setSearchValue] = useState("");
 
 	useQuery({
-		queryKey: ["events", { search: searchElement.current.value }],
-		queryFn: () => fetchEvents(searchElement.current.value),
+		queryKey: ["events", { search: searchValue }],
+		queryFn: () => fetchEvents(searchValue),
 	});
 	
 	const handleSubmit = (event: any) => {
@@ -22,7 +21,12 @@ const FindEventSection = (): JSX.Element => {
 			<header>
 				<h2>Find your next event!</h2>
 				<form onSubmit={handleSubmit} id="search-form">
-					
+					<input
+						type="search"
+						value={searchValue}
+						onChange={(event) => setSearchValue(event.target.value)}
+						aria-label="Search events"
+					/>
 					<button>Search</button>
 				</form>
 			</header>
