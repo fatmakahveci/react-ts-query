@@ -8,3 +8,25 @@ updates:
     groups:
       github-actions:
         patterns: ["*"]
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+  - package-ecosystem: npm
+    directory: /frontend
+    schedule:
+      interval: weekly
+    groups:
+      react:
+        patterns:
+          - react
+          - react-dom
+          - "@types/react*"
+      vitest:
+        patterns:
+          - vitest
+          - "@vitest/*"
+  - package-ecosystem: npm
+    directory: /backend
+    schedule:
+      interval: weekly

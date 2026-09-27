@@ -9,7 +9,7 @@ documentation improvements, tests, and well-scoped features are welcome.
 - Open an issue before starting a large or breaking change so the approach can
   be discussed first.
 - Report security vulnerabilities privately by following the
-  [security policy](SECURITY.md).
+  [security policy](../SECURITY.md).
 
 ## Development Workflow
 
