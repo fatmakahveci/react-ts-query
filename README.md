@@ -4,13 +4,13 @@ A responsive event management application built with React, TypeScript, TanStack
 
 ## Demo
 
-Explore the new visitor features: filters, calendar browsing, saved events, personal plans and dark mode. This walkthrough uses temporary demonstration records.
+See the current app in action: discover and filter events, browse the calendar, save favourites, build a personal plan, switch themes, and create, edit and delete an event as an administrator. Both recordings use temporary demonstration records.
 
-![React Events visitor demo: discovery, filters, calendar, saved events and personal plan](docs/assets/visitor-demo.gif)
+![React Events demo: discovery, search, filters, calendar, saved events, personal plans, dark mode and administrator create, edit and delete flows](docs/assets/demo.gif)
 
-Browse, search, create, edit and delete events in this 20-second walkthrough.
+A shorter tour of the visitor experience:
 
-![React Events demo: browse, search, create, edit and delete events](docs/assets/demo.gif)
+![React Events visitor demo: discovery, filters, calendar, saved events, personal plan and dark mode](docs/assets/visitor-demo.gif)
 
 ## Get started
 
