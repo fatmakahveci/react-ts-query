@@ -1,52 +1,23 @@
-"use client";
-
-import {
-	Navigate,
-	RouterProvider,
-	createBrowserRouter,
-} from "react-router-dom";
+import type { JSX } from "react";
+import { RouterProvider } from "react-router-dom";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
-import Events from "./components/Events/Events";
-import EventDetails from "./components/Events/EventDetails";
-import NewEvent from "./components/Events/NewEvent";
-import EditEvent from "./components/Events/EditEvent";
+import { AdminProvider } from "../features/auth/AdminAccess";
+import { router } from "./router";
+import Toast from "../components/ui/Toast";
 
-const router = createBrowserRouter([
-	{
-		path: "/",
-		element: <Navigate to="/events" />,
-	},
-	{
-		path: "/events",
-		element: <Events />,
-
-		children: [
-			{
-				path: "/events/new",
-				element: <NewEvent />,
-			},
-		],
-	},
-	{
-		path: "/events/:id",
-		element: <EventDetails />,
-		children: [
-			{
-				path: "/events/:id/edit",
-				element: <EditEvent />,
-			},
-		],
-	},
-]);
-
-const queryClient: QueryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: { queries: { staleTime: 30_000, retry: 1 } },
+});
 
 const App = (): JSX.Element => {
-	return (
-		<QueryClientProvider client={queryClient}>
-			<RouterProvider router={router} />
-		</QueryClientProvider>
-	);
+  return (
+    <QueryClientProvider client={queryClient}>
+      <AdminProvider>
+        <RouterProvider router={router} />
+        <Toast />
+      </AdminProvider>
+    </QueryClientProvider>
+  );
 };
 
 export default App;

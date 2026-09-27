@@ -1,41 +1,39 @@
 {
-	"name": "react-query-events-frontend",
-	"version": "0.1.0",
-	"private": true,
-	"type": "module",
-	"dependencies": {
-		"@tanstack/react-query": "^5.102.8",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"react-icons": "^4.11.0",
-		"react-router-dom": "^7.18.2",
-		"styled-components": "^6.0.8"
-	},
-	"scripts": {
-		"dev": "vite",
-		"start": "vite",
-		"build": "tsc --noEmit && vite build",
-		"preview": "vite preview",
-		"test": "vitest run",
-		"test:coverage": "vitest run --coverage",
-		"test:watch": "vitest",
-		"typecheck": "tsc --noEmit"
-	},
-	"engines": {
-		"node": ">=20.19.0"
-	},
-	"devDependencies": {
-		"@testing-library/dom": "^10.4.1",
-		"@testing-library/jest-dom": "^7.0.1",
-		"@testing-library/react": "^16.3.3",
-		"@types/node": "^20.19.0",
-		"@types/react": "^18.3.0",
-		"@types/react-dom": "^18.3.0",
-		"@vitejs/plugin-react": "^6.1.1",
-		"@vitest/coverage-v8": "^4.1.11",
-		"jsdom": "^27.4.0",
-		"typescript": "^5.9.3",
-		"vite": "^8.2.2",
-		"vitest": "^4.1.11"
-	}
+  "name": "react-query-events-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@tanstack/react-query": "^5.104.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": "^24.15.0 || >=26.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^24.19.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "@vitest/coverage-v8": "^5.0.2",
+    "jsdom": "^30.1.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1",
+    "vitest": "^5.0.2"
+  }
 }

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+coverage/
+**/package-lock.json
+.git/
+.github/
+LICENSE.md
+backend/data/
+frontend/public/

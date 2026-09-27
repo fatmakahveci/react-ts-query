@@ -1,0 +1,19 @@
+{
+  "name": "react-query-events",
+  "private": true,
+  "scripts": {
+    "setup": "npm --prefix backend ci && npm --prefix frontend ci",
+    "dev": "npm --prefix frontend run dev",
+    "dev:api": "npm --prefix backend start",
+    "test": "npm --prefix frontend test && npm --prefix backend test",
+    "check": "npm --prefix frontend run test:coverage && npm --prefix frontend run build && npm --prefix backend run test:coverage",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "engines": {
+    "node": "^24.15.0 || >=26.0.0"
+  },
+  "devDependencies": {
+    "prettier": "3.9.9"
+  }
+}

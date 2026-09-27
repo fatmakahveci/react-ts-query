@@ -1,25 +1,16 @@
 {
-  "short_name": "Query Events",
-  "name": "React Query Events",
+  "short_name": "React Events",
+  "name": "React Events \u2014 Find your people",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
     }
   ],
-  "start_url": ".",
+  "start_url": "/events",
   "display": "standalone",
-  "theme_color": "#242424",
-  "background_color": "#ffffff"
+  "theme_color": "#245a42",
+  "background_color": "#f8f9f5"
 }
